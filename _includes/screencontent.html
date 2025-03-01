@@ -23,6 +23,12 @@
                 $(function() {
                     $(".videoContainer").removeClass("hidden");
                     $(".screenvideo").append('<source src="{{ site.github.baseurl }}{{ file.path }}" type="video/mp4">');
+                    $(".screenvideo").attr({
+                        autoplay: true,
+                        loop: true,
+                        muted: true, // Ensures autoplay works in most browsers
+                        playsinline: true // For better mobile support
+                    });
                     console.log("{{ file.path }}");
                 });
             </script>
