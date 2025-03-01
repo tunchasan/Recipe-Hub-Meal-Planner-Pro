@@ -50,16 +50,16 @@
 		{% endif %}
 
 		{% if site.email_address %}
-			<div class="help-support">
-			    <h2>Help & Support</h2>
-			    <p>If you have any questions about RecipeHub, feel free to reach out by clicking the email icon below. 👇</p>
-			    <a href="mailto:{{ site.email_address }}">
-			        <span class="fa-stack fa-1x">
-			            <i class="socialIconBack fas fa-circle fa-stack-2x"></i>
-			            <i class="socialIconTop fas fa-envelope fa-stack-1x"></i>
-			        </span>
-			    </a>
-			</div>
+		    <div class="help-support">
+		        <h2>Help & Support</h2>
+		        <p>If you have any questions about RecipeHub, feel free to reach out by clicking the email icon below. 👇</p>
+		        <a href="mailto:{{ site.email_address }}">
+		            <span class="fa-stack fa-2x">
+		                <i class="socialIconBack fas fa-circle fa-stack-2x"></i>
+		                <i class="socialIconTop fas fa-envelope fa-stack-1x"></i>
+		            </span>
+		        </a>
+		    </div>
 		{% endif %}
 
 	</div>
@@ -72,3 +72,25 @@
 		{% endif %}
 	</div>
 </footer>
+
+<style>
+    .help-support {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .help-support h2 {
+        font-size: 28px;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+
+    .help-support p {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .help-support .fa-stack {
+        font-size: 2rem;
+    }
+</style>
